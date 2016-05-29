@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'feathers-ember',
+    modulePrefix: 'ember-simple-auth-example',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

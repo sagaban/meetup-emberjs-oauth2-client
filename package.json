@@ -1,7 +1,7 @@
 {
-  "name": "feathers-ember",
+  "name": "ember-simple-auth-example",
   "version": "0.0.0",
-  "description": "Small description for feathers-ember goes here",
+  "description": "Small description for ember-simple-auth-example goes here",
   "private": true,
   "directories": {
     "doc": "doc",
