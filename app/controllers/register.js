@@ -13,10 +13,6 @@ export default Ember.Controller.extend({
       const user = this.get('model');
       const flashMessages = this.get('flashMessages');
       user.save()
-      .catch((error) => {
-        flashMessages.danger(error.responseJSON.message);
-        console.error(JSON.stringify(error.responseJSON));
-      })
       .then((/*user*/)=> {
         // I could logind the user after it is created
         // this.get('session')
@@ -30,6 +26,10 @@ export default Ember.Controller.extend({
         // });
         flashMessages.success('User created');
         this.transitionTo('index');
+      })
+      .catch((error) => {
+        flashMessages.danger(error.responseJSON.message);
+        console.error(JSON.stringify(error.responseJSON));
       });
     },
   },
